@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale">
+    <link rel="stylesheet" href="style.css">
+    <title>Her Thoughts Survey Form</title>
+</head>
+<style>
+
+</style>
+<body>
+    
+    <h1 id="title">Her Thoughts Survey Form </h1>
+    <p id="description" class="description" class="text-center">
+      Her Thoughts is a platform where people can share their poems, art and monologues.<br>
+      The survey will help us create a safe heaven for all reads and writers, Thank you.
+    </p>
+
+    <form id="survey-form">
+        <label id="name-label">Name</label>
+        <input type="text" name="name" id="name" required placeholder="Enter your name"><br>
+  
+        <label id="email-label">Email</label>
+        <input type="email" name="email" id="email" required placeholder="Enter your Email"><br>
+  
+        <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+        <input type="number" name="age" id="number" min="10" max="99" required placeholder="Age"><br>
+
+        <!--the dropdown start-->
+        <label id="favorite-label">Which option best describes your engagement in the community? </label>
+        <select id="dropdown" name="engagement">
+          <option disabled selected value>Select engagement</option>
+          <option value="Reader">Reader</option>
+          <option value="Writer">Writer</option>
+          <option value="Artist">Artist</option>
+          <option value="other">Other</option>
+        </select><br>
+        <!--the checkbox end-->
+
+        <!--the radio buttons start-->
+        <div id="button-area">
+            <label id="recommend-label">Would you recommend Her Thoughts to a friend?</label>
+            <input name="recommend-label" type="radio" class="radio-inline" value="definitely"> Definitely<br>
+            <input name="recommend-label" type="radio" class="radio-inline" value="maybe"> Maybe<br>
+            <input name="recommend-label" type="radio" class="radio-inline" value="other"> Not sure
+          </div><br>
+        <!--the radio buttons end-->
+
+          <!--the checkbox start-->
+          <div id="button-area">
+            <label id="improved-label">What would you like to see improved?<span class="clue">(Check all that apply)</span></label>
+            <input type="checkbox" name="option1" value="User Interface" class="input-checkbox">User Interface<br>
+            <input type="checkbox" name="option2" value="Community" class="input-checkbox"> Community<br>
+            <input type="checkbox" name="option3" value="Art" class="input-checkbox"> Art<br>
+            <input type="checkbox" name="option4" value="Poetry" class="input-checkbox"> Poetry<br>
+            <input type="checkbox" name="option5" value="Monologues" class="input-checkbox"> Monologues<br>
+          </div><br>
+          <!--the checkbox end-->
+
+           <!--the comment box start-->
+           <label id="comments-label">Any comments or suggestions?</label>
+           <textarea placeholder="Enter your comment here..."></textarea><br>
+           <!--the comment box end-->
+      
+           <!--Submit button start-->
+           <button type="submit" id="submit" class="submit">Submit</button>
+
+           <!--Submit button end -->
+
+    </form><!--end of form-->
+    
+    <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

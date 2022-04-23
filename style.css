@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+:root {
+    --color-white: #f3f3f3;
+    --color-violet: #5f2c3e;
+    --color-mauve: #d1adcc;
+    --color-mint:#c2d2bd;
+  }
+
+  *, *::before, *::after {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    padding-left: 20%;
+    padding-right: 20%;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--color-white);
+    background-color: var(--color-mauve);
+    margin: 0;
+    margin-bottom: 10%;
+
+  }
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-mauve);
+    background-image: linear-gradient(
+        115deg,
+        rgba(175, 117, 136, 0.8),
+        rgba(133, 44, 85, 0.7)
+      ),url(./image/bg.jpg);
+      
+  }
+
+  form {
+    background: var(--color-violet);
+    padding: 2.5rem 0.625rem;
+    border-radius: 0.25rem;
+  }
+  
+  h1, p{
+    text-align:center;
+  }
+  
+
+  label {
+    display:flex;
+    text-align:center;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  input, textarea, select {
+    display: block;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+
+  .clue {
+    margin-left: 0.25rem;
+    font-size: 0.9rem;
+    color: #e4e4e4;
+  }
+  .description {
+    font-style: italic;
+    font-weight: 200;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  }
+
+  button {
+    border: none;
+  }
+
+  input, button,select,textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+  }
+
+  .input-radio,.input-checkbox {
+  display: inline-block;
+  margin-right: 0.625rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+}
+
+.submit{
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background: var(--color-mint);
+    color: inherit;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+
+  
